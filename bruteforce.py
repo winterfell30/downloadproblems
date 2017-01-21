@@ -7,6 +7,17 @@ import urllib.parse
 import urllib.request
 from bs4 import BeautifulSoup
 
+values = {}
+
+data = urllib.parse.urlencode(values).encode('utf-8')
+
+headers = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36",
+    "Connection": "keep-alive",
+    "Referer": "https://vjudge.net/",
+    "Content-Type": "application/json; charset=utf-8"
+}
+
 OJ = {
     "POJ": 1,
     "ZOJ": 1,
