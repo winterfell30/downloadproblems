@@ -1,3 +1,4 @@
+#-*-coding:utf-8-*-
 import os
 import re
 import time
@@ -176,7 +177,7 @@ class spider:
 def main():
     _st = time.time()
     problemst = 1000
-    problemed = 1049
+    problemed = 1000
     ojname = "UVA"
     if ojname not in OJ:
         return print("check you input")
